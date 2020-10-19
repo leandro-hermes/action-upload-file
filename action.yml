@@ -1,0 +1,22 @@
+name: 'Upload file'
+description: 'Upload a file to an HTTP server'
+inputs:
+  host:
+    description: 'Host of the HTTP server (e.g. example.com)'
+    required: true
+  path:
+    description: 'Path of the URL to send the file (e.g. /postFile)'
+    required: true
+  filePath:
+    description: 'Full path of the local file you want to upload (e.g. /home/user/file.zip)'
+    required: true
+  data:
+    description: 'Additional data you should want to send within the request (e.g. "{\"foo\":\"bar\"}")'
+    required: false
+outputs:
+  response:
+    description: 'The response from the server'
+runs:
+  using: 'node12'
+  main: 'index.js'
+

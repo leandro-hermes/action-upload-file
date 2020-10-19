@@ -1,0 +1,31 @@
+{
+  "name": "action-upload-file",
+  "version": "1.0.0",
+  "description": "GitHub action to upload files to an HTTP server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandro-hermes/action-upload-file.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "upload",
+    "http",
+    "post",
+    "nodejs"
+  ],
+  "author": "Leandro Hermes <leandro@leandrohermes.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leandro-hermes/action-upload-file/issues"
+  },
+  "homepage": "https://github.com/leandro-hermes/action-upload-file#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "form-data": "^3.0.0"
+  }
+}
