@@ -1,4 +1,4 @@
-name: 'Upload file'
+name: 'Upload file via HTTP'
 description: 'Upload a file to an HTTP server'
 inputs:
   host:
