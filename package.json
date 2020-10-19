@@ -1,6 +1,6 @@
 {
   "name": "action-upload-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitHub action to upload files to an HTTP server",
   "main": "index.js",
   "scripts": {
