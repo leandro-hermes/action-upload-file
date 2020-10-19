@@ -7,6 +7,10 @@ const path = core.getInput('path');
 const filePath = core.getInput('filePath');
 const data = core.getInput('data');
 
+console.info('host', host);
+console.info('path', path);
+console.info('data', data);
+
 try {
   fs.existsSync(filePath);
   console.info('File found', filePath);
