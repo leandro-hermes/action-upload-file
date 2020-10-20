@@ -7,9 +7,7 @@ const path = core.getInput('path');
 const filePath = core.getInput('filePath');
 const data = core.getInput('data');
 
-console.info('host', host);
-console.info('path', path);
-console.info('data', data);
+console.info('endpoint', host + path);
 
 try {
   fs.existsSync(filePath);
