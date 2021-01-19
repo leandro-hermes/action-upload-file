@@ -38,7 +38,7 @@ jobs:
         id: file
         run: echo "::set-output name=path::$(realpath relative/path/to.file)"
       
-      - uses: actions/action-upload-file@v1
+      - uses: actions/action-upload-file@v1.0.2
         with:
           host: 'example.com'
           path: '/postFile'
