@@ -16,6 +16,10 @@ Uploads a file via HTTP POST using the [form-data](https://github.com/form-data/
 
 **Required**. Full path of the local file you want to upload (e.g. /home/user/file.zip).
 
+### `https`
+
+Optional. Type `true` whether your request must go on HTTPS. Default `false`.
+
 ### `data`
 
 Optional. Additional data you should want to send within the request (e.g. '{"foo":"bar"}').
@@ -37,7 +41,7 @@ jobs:
       - name: Exports the full file path
         id: file
         run: echo "::set-output name=path::$(realpath relative/path/to.file)"
-      
+
       - uses: leandro-hermes/action-upload-file@v1.0.2
         with:
           host: 'example.com'

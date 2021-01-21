@@ -11,7 +11,8 @@ inputs:
     description: 'Full path of the local file you want to upload (e.g. /home/user/file.zip)'
     required: true
   https:
-    description: 'Wheter the request must go on HTTPS. Default false'
+    description: 'Whether the request must go on HTTPS. Default false'
+    default: 'false'
     required: false
   data:
     description: 'Additional data you should want to send within the request (e.g. "{\"foo\":\"bar\"}")'
