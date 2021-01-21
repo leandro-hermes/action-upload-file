@@ -3,7 +3,7 @@ const core = require('@actions/core');
 const fs = require('fs');
 
 const host = core.getInput('host');
-const protocol = core.getInput('protocol');
+const protocol = core.getInput('https') ? 'https:' : 'http:';
 const path = core.getInput('path');
 const filePath = core.getInput('filePath');
 const data = core.getInput('data');
