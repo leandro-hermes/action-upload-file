@@ -3,6 +3,7 @@ const core = require('@actions/core');
 const fs = require('fs');
 
 const host = core.getInput('host');
+const protocol = core.getInput('protocol');
 const path = core.getInput('path');
 const filePath = core.getInput('filePath');
 const data = core.getInput('data');
@@ -24,7 +25,7 @@ form.getLength(function (err, l) {
   console.info('Sending file, size:', l + 'b');
 });
 
-form.submit({host, path}, function (err, res) {
+form.submit({host, protocol, path}, function (err, res) {
   if (err) {
     console.error(err);
     return core.setFailed('Request failed');
