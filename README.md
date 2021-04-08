@@ -42,7 +42,7 @@ jobs:
         id: file
         run: echo "::set-output name=path::$(realpath relative/path/to.file)"
 
-      - uses: leandro-hermes/action-upload-file@v1.0.2
+      - uses: leandro-hermes/action-upload-file@v1.1.0
         with:
           host: 'example.com'
           path: '/postFile'
